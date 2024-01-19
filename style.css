@@ -8,6 +8,7 @@ nav .container-fluid {
 
 main {
     height: calc(100vh - 66px);
+    margin-top: 66px;
 }
 
 #header {
@@ -23,8 +24,13 @@ main {
     font-size: calc(0.9em + 0.1vw);
 }
 
+.my_ml_size {
+    height: 28px;
+}
+
 .my_mob_logo {
-    max-height: 38px;
+    height: 28px;
+    width: 28px;
 }
 
 .breadcrumb-item+.breadcrumb-item::before {
@@ -32,9 +38,8 @@ main {
 }
 
 #aside {
-    position: fixed;
     top: 66px;
-    bottom: 0px;
 
     height: 100% - 66px;
 }
+

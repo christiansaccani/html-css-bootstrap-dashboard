@@ -14,12 +14,12 @@
 
 <body class="bg-body-tertiary vw-100">
 
-    <nav class="navbar navbar-expand-lg my-1">
+    <nav class="navbar navbar-expand-lg my-1 fixed-top">
         <div class="container-fluid align-items-stretch">
-            <a class="navbar-brand d-md-none d-lg-xl-xxl-block pe-2" href="#"><img class="img-fluid my_mob_logo" src="img/mobile-logo.png" alt=""></a>
+            <a class="navbar-brand d-md-none d-lg-xl-xxl-block me-2" href="#"><img class="img-fluid my_mob_logo ms-1" src="img/mobile-logo.png" alt=""></a>
             <a class="navbar-brand d-none d-md-block" href="#"><img src="img/logo.svg" alt=""></a>
 
-          <form class="d-flex align-items-center flex-grow-1 bg-body-secondary text-black ps-2 rounded-3" role="search">
+          <form class="d-flex align-items-center flex-grow-1 bg-body-secondary text-black ps-2 ms-4 rounded-3" role="search">
             <i class="fa-solid fa-magnifying-glass"></i>
             <input class="form-control me-2 border-0 bg-body-secondary text-black" type="search" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Search">
           </form>
@@ -63,12 +63,12 @@
         </div>
     </nav>
 
-    <main>
+    <main class="overflow-y-auto">
         <div class="container-fluid h-100">
             <div class="row h-100">
 
 <!-- inizio aside -->
-                <div id="aside" class="col-1 align-items-between text-white py-4 my_aside_bg">
+                <div id="aside" class="col-2 col-sm-1 align-items-between text-white py-4 my_aside_bg fixed-bottom">
                     <div class="row h-100 ps-2">
                         <div class="col-12 d-flex flex-column align-items-center align-items-lg-start gap-2">
                             <div class="align-center"><i class="fa-solid fa-house me-3 my_aside_txt" style="height: 15px; width: 15px;"></i> <p class="d-none d-lg-inline">Home</p></div>
@@ -82,7 +82,7 @@
                 </div>
 <!-- fine aside -->
 
-                <div class="col-11 offset-1">
+                <div class="col-10 col-sm-11 offset-2 offset-sm-1">
 
                     <div class="row">
                         <div id="header" class="col-12 py-4 text-white">
