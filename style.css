@@ -5,3 +5,20 @@ body {
 nav .container-fluid {
     background-color: white;
 }
+
+main {
+    height: calc(100vh - 66px);
+}
+
+.my_aside_bg {
+    background-color: #051e34;
+    background-image: url(img/sidebar-bg.png);
+}
+
+.my_aside_txt {
+    font-size: calc(0.9em + 0.1vw);
+}
+
+.my_mob_logo {
+    max-height: 38px;
+}
