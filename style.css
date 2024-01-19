@@ -30,3 +30,11 @@ main {
 .breadcrumb-item+.breadcrumb-item::before {
     color: white;
 }
+
+#aside {
+    position: fixed;
+    top: 66px;
+    bottom: 0px;
+
+    height: 100% - 66px;
+}
