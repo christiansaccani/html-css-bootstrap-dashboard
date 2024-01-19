@@ -28,9 +28,8 @@ main {
     height: 28px;
 }
 
-.my_mob_logo {
-    height: 28px;
-    width: 28px;
+.my_size_logo {
+    height: 36px;
 }
 
 .breadcrumb-item+.breadcrumb-item::before {
