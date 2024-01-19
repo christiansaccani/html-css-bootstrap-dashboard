@@ -10,6 +10,10 @@ main {
     height: calc(100vh - 66px);
 }
 
+#header {
+    background-color: #1b72e8;
+}
+
 .my_aside_bg {
     background-color: #051e34;
     background-image: url(img/sidebar-bg.png);
@@ -21,4 +25,8 @@ main {
 
 .my_mob_logo {
     max-height: 38px;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+    color: white;
 }

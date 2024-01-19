@@ -14,7 +14,7 @@
 
 <body class="bg-body-tertiary vw-100">
 
-    <nav class="navbar navbar-expand-lg my-1">
+    <nav class="navbar navbar-expand-lg my-1 offset-1">
         <div class="container-fluid align-items-stretch">
             <a class="navbar-brand d-md-none d-lg-xl-xxl-block pe-2" href="#"><img class="img-fluid my_mob_logo" src="img/mobile-logo.png" alt=""></a>
             <a class="navbar-brand d-none d-md-block" href="#"><img src="img/logo.svg" alt=""></a>
@@ -66,7 +66,9 @@
     <main>
         <div class="container-fluid h-100">
             <div class="row h-100">
-                <div id="aside" class="col-1 h-100 align-items-between text-white py-4 my_aside_bg">
+
+<!-- inizio aside -->
+                <div id="aside" class="col-1 h-100 align-items-between text-white py-4 my_aside_bg fixed-bottom">
                     <div class="row h-100 ps-2">
                         <div class="col-12 d-flex flex-column align-items-center align-items-lg-start gap-2">
                             <div class="align-center"><i class="fa-solid fa-house me-3 my_aside_txt" style="height: 15px; width: 15px;"></i> <p class="d-none d-lg-inline">Home</p></div>
@@ -78,7 +80,161 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-11" style="background-color: blue;">
+<!-- fine aside -->
+
+                <div class="col-11 offset-1">
+
+                    <div class="row">
+                        <div id="header" class="col-12 py-4 text-white">
+                            <div class="row align-items-start">
+                                <div class="col-md-4 col-12">
+                                    Boolean <span class="badge rounded-pill text-bg-primary">Piano blaze</span>
+                                    <nav style="--bs-breadcrumb-divider: '&#187';" aria-label="breadcrumb">
+                                        <ol class="breadcrumb">
+                                          <li class="breadcrumb-item"><a class="text-white text-decoration-none" href="#">Home</a></li>
+                                          <li class="breadcrumb-item text-white" aria-current="page">Library</li>
+                                        </ol>
+                                    </nav>
+                                </div>
+                                <div class="col-md-4 col-12 text-md-center">
+                                    <div>
+                                        Studenti Online negli ultimi 30 minuti
+                                    </div>
+                                    <div>
+                                        125
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-12 text-md-end">
+                                    <div class="me-5">
+                                        Nuovo Studente
+                                        <button type="button" class="btn btn-outline-light mx-2">
+                                            <i class="fa-solid fa-plus"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-8 col-12">
+                            <div class="row">
+
+                                <!-- prossime classi -->
+                                <div class="col-12 mt-4">
+                                    <div class="card w-100">
+                                        <div class="card-header">
+                                          Featured
+                                        </div>
+                                        <ul class="list-group list-group-flush">
+                                          <li class="list-group-item">An item</li>
+                                          <li class="list-group-item">A second item</li>
+                                          <li class="list-group-item">A third item</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <!-- faq -->
+                                <div class="col-12 mt-4">
+                                    <div class="card accordion accordion-flush" id="accordionFlushExample">
+                                        <div class="card-header">
+                                            Featured
+                                        </div>
+                                        <div class="accordion-item">
+                                          <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                              Accordion Item #1
+                                            </button>
+                                          </h2>
+                                          <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                                          </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                          <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                              Accordion Item #2
+                                            </button>
+                                          </h2>
+                                          <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                                          </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                          <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                              Accordion Item #3
+                                            </button>
+                                          </h2>
+                                          <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                                          </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-12">
+                            <div class="row">
+
+                                <!-- todo -->
+                                <div class="col-12 mt-4">
+                                    <div class="card w-100">
+                                        <div class="card-header">
+                                          Featured
+                                        </div>
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                        Default checkbox
+                                                    </label>
+                                                </div>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                        Default checkbox
+                                                    </label>
+                                                </div>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                        Default checkbox
+                                                    </label>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <!-- attivi -->
+                                <div class="col-12 mt-4">
+                                    <div class="card w-100" style="width: 18rem;">
+                                        <img src="..." class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Card title</h5>
+                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        </div>
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item">An item</li>
+                                            <li class="list-group-item">A second item</li>
+                                            <li class="list-group-item">A third item</li>
+                                        </ul>
+                                        <div class="card-body">
+                                          <a href="#" class="card-link">Card link</a>
+                                          <a href="#" class="card-link">Another link</a>
+                                        </div>
+                                      </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
