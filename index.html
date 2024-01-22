@@ -31,34 +31,26 @@
   
               <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
                   <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                      <li class="nav-item dropdown">
-                          <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              <i class="fa-solid fa-list text-body-secondary"></i>
-                          </a>
-                          <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#">Action</a></li>
-                              <li><a class="dropdown-item" href="#">Another action</a></li>
-                              <li><hr class="dropdown-divider"></li>
-                              <li><a class="dropdown-item" href="#">Something else here</a></li>
-                          </ul>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#"><i class="fa-solid fa-list text-body-secondary"></i></a>
                       </li>
                       <li class="nav-item">
                           <a class="nav-link active" aria-current="page" href="#"><i class="fa-solid fa-circle-question text-body-secondary"></i></a>
                       </li>
-                      <li>
-                          <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="true">
-                              <i class="fa-solid fa-ellipsis-vertical text-body-secondary"></i>
-                          </a>
-                          <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#">Action</a></li>
-                              <li><a class="dropdown-item" href="#">Another action</a></li>
-                              <li><hr class="dropdown-divider"></li>
-                              <li><a class="dropdown-item" href="#">Something else here</a></li>
-                          </ul>
-                      
                       <li class="nav-item">
-                          <a class="nav-link active" aria-current="page" href="#"><i class="fa-solid fa-bell text-warning"></i></a>
+                        <a class="nav-link active" aria-current="page" href="#"><i class="fa-solid fa-ellipsis-vertical text-body-secondary"></i></a>
                       </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="true">
+                            <i class="fa-solid fa-bell text-warning"></i>
+                        </a>
+                        <ul class="dropdown-menu my_dropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
                   </ul>          
               </div>
           </div>
@@ -70,12 +62,12 @@
         <aside class="my_aside my_aside_bg align-items-between py-4 text-white">
             <div class="row h-100 ms-2">
                 <div class="col-12 d-flex flex-column align-items-center align-items-lg-start gap-2">
-                    <div class="align-center"><i class="fa-solid fa-house me-3 my_aside_txt" style="height: 15px; width: 15px;"></i> <p class="d-none d-lg-inline">Home</p></div>
-                    <div class="align-center"><i class="fa-solid fa-chart-simple me-3 my_aside_txt" style="height: 15px; width: 15px;"></i> <p class="d-none d-lg-inline">Stats</p></div>
-                    <div class="align-center"><i class="fa-solid fa-signal me-3 my_aside_txt" style="height: 15px; width: 15px;"></i> <p class="d-none d-lg-inline">Signals</p></div>
+                    <a class="align-center text-decoration-none text-white" href="#"><i class="fa-solid fa-house me-3 my_aside_txt" style="height: 15px; width: 15px;"></i> <p class="d-none d-lg-inline">Home</p></a>
+                    <a class="align-center text-decoration-none text-white" href="#"><i class="fa-solid fa-chart-simple me-3 my_aside_txt" style="height: 15px; width: 15px;"></i> <p class="d-none d-lg-inline">Stats</p></a>
+                    <a class="align-center text-decoration-none text-white" href="#"><i class="fa-solid fa-signal me-3 my_aside_txt" style="height: 15px; width: 15px;"></i> <p class="d-none d-lg-inline">Signals</p></a>
                 </div>
                 <div class="col-12 d-flex justify-content-center justify-content-lg-start align-items-end">
-                    <div class="align-center"><i class="fa-solid fa-gear me-3 my_aside_txt" style="height: 15px; width: 15px;"></i> <p class="d-none d-lg-inline">Admin</p></div>
+                    <a class="align-center text-decoration-none text-white" href="#"><i class="fa-solid fa-gear me-3 my_aside_txt" style="height: 15px; width: 15px;"></i> <p class="d-none d-lg-inline">Admin</p></a>
                 </div>
             </div>
         </aside>
@@ -83,8 +75,10 @@
 
 
         <!-- main -->
-        <main class="my_main">
+        <main class="my_main overflow-x-hidden">
             <div class="row">
+
+                <!-- header -->
                 <div id="header" class="col-12 py-4 text-white">
                     <div class="row align-items-start justify-content-between flex-nowrap">
                         <div class="col-md-4 col-12 fs-3 ms-2 fw-semibold">
@@ -121,14 +115,126 @@
                         <!-- prossime classi -->
                         <div class="col-12 mt-4">
                             <div class="card w-100">
-                                <div class="card-header">
-                                  Featured
+                                <div class="card-header fs-3 fw-semibold">
+                                  Prossime Classi
                                 </div>
-                                <ul class="list-group list-group-flush">
-                                  <li class="list-group-item">An item</li>
-                                  <li class="list-group-item">A second item</li>
-                                  <li class="list-group-item">A third item</li>
-                                </ul>
+                                <table class="table my_table_size">
+                                    <thead>
+                                      <tr>
+                                        <th class="my_table_name" scope="col">Nome</th>
+                                        <th class="my_tab_h" scope="col">Data inizio</th>
+                                        <th class="my_tab_h" scope="col">ROI</th>
+                                        <th class="my_tab_h" scope="col">Stato</th>
+                                        <th class="my_tab_h" scope="col">Azioni</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <th scope="row">
+                                            <img class="my_avatar" src="./img/class-avatar.jpg" alt="avatar">
+                                            Classe 75
+                                        </th>
+                                        <td class="my_date">15 Feb 2021</td>
+                                        <td class="my_percentage">20%</td>
+                                        <td><span class="badge fw-normal text-bg-success">Done</span></td>
+                                        <td>
+                                            <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pencil"></i></button>
+                                            <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">
+                                            <img class="my_avatar" src="./img/class-avatar.jpg" alt="avatar">
+                                            Classe 76
+                                        </th>
+                                        <td class="my_date">16 Feb 2021</td>
+                                        <td class="my_percentage">20%</td>
+                                        <td><span class="badge fw-normal text-bg-success">Done</span></td>
+                                        <td>
+                                            <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pencil"></i></button>
+                                            <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">
+                                            <img class="my_avatar" src="./img/class-avatar.jpg" alt="avatar">
+                                            Classe 77
+                                        </th>
+                                        <td class="my_date">17 Feb 2021</td>
+                                        <td class="my_percentage">20%</td>
+                                        <td><span class="badge fw-normal text-white bg-warning">Process</span></td>
+                                        <td>
+                                            <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pencil"></i></button>
+                                            <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">
+                                            <img class="my_avatar" src="./img/class-avatar.jpg" alt="avatar">
+                                            Classe 78
+                                        </th>
+                                        <td class="my_date">18 Feb 2021</td>
+                                        <td class="my_percentage">20%</td>
+                                        <td><span class="badge fw-normal text-bg-success">Done</span></td>
+                                        <td>
+                                            <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pencil"></i></button>
+                                            <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">
+                                            <img class="my_avatar" src="./img/class-avatar.jpg" alt="avatar">
+                                            Classe 79
+                                        </th>
+                                        <td class="my_date">19 Feb 2021</td>
+                                        <td class="my_percentage">20%</td>
+                                        <td><span class="badge fw-normal text-bg-danger">Failed</span></td>
+                                        <td>
+                                            <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pencil"></i></button>
+                                            <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">
+                                            <img class="my_avatar" src="./img/class-avatar.jpg" alt="avatar">
+                                            Classe 80
+                                        </th>
+                                        <td class="my_date">20 Feb 2021</td>
+                                        <td class="my_percentage">20%</td>
+                                        <td><span class="badge fw-normal text-bg-success">Done</span></td>
+                                        <td>
+                                            <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pencil"></i></button>
+                                            <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">
+                                            <img class="my_avatar" src="./img/class-avatar.jpg" alt="avatar">
+                                            Classe 81
+                                        </th>
+                                        <td class="my_date">21 Feb 2021</td>
+                                        <td class="my_percentage">20%</td>
+                                        <td><span class="badge fw-normal text-bg-danger">Failed</span></td>
+                                        <td>
+                                            <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pencil"></i></button>
+                                            <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">
+                                            <img class="my_avatar" src="./img/class-avatar.jpg" alt="avatar">
+                                            Classe 82
+                                        </th>
+                                        <td class="my_date">22 Feb 2021</td>
+                                        <td class="my_percentage">20%</td>
+                                        <td><span class="badge fw-normal text-bg-success">Done</span></td>
+                                        <td>
+                                            <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pencil"></i></button>
+                                            <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button>
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
                             </div>
                         </div>
 

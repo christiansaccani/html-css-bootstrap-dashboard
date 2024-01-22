@@ -37,7 +37,6 @@ nav .container-fluid{
 }
 
 .my_aside {
-    border: solid 2px black;
     background-color: #051e34;
     background-image: url(img/sidebar-bg.png);
     /* test */
@@ -46,8 +45,6 @@ nav .container-fluid{
 
 .my_main {
     background-color: #f8f9fa;
-    border: solid 2px black;
-    /* test */
 
     width: calc(100% - 150px);
 
@@ -65,4 +62,36 @@ nav .container-fluid{
 
 .my_plus:hover {
     color: #1b72e8;
+}
+
+.my_table_name {
+    width: 40%;
+}
+
+.my_avatar {
+    height: 35px;
+    margin-right: 0.5em;
+}
+
+.my_tab_h {
+    text-align: center;
+    font-weight: 600;
+}
+
+td {
+    text-align: center;
+    vertical-align: middle;
+
+    font-weight: 400;
+}
+
+.my_table_size {
+    width: calc(100% - 2em);
+    margin-left: 1em;
+}
+
+.my_dropdown {
+    right: 15%;
+    left: auto !important;
+    top: 105% !important;
 }
