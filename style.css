@@ -53,3 +53,16 @@ nav .container-fluid{
 
     overflow-y: auto;
 }
+
+.my_header_badge {
+    background-color: #165bba !important;
+}
+
+.my_middle {
+    display: flex;
+    justify-content: center;
+}
+
+.my_plus:hover {
+    color: #1b72e8;
+}
