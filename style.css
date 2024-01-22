@@ -95,3 +95,7 @@ td {
     left: auto !important;
     top: 105% !important;
 }
+
+.my_inside_border {
+    border: 1px solid #dee2e6 !important;
+}
