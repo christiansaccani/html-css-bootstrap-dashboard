@@ -17,8 +17,8 @@
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary my_nav">
         <div class="container-fluid align-items-stretch py-1">
-            <a class="navbar-brand d-md-none d-lg-xl-xxl-block me-2 my_size_logo" href="#"><img class="img-fluid ms-1 pb-1 my_size_logo" src="img/mobile-logo.png" alt=""></a>
-            <a class="navbar-brand d-none d-md-block my_size_logo" href="#"><img src="img/logo.svg" alt=""></a>
+            <a class="navbar-brand d-lg-none me-2 my_size_logo" href="#"><img class="img-fluid ms-1 pb-1 pe-3 my_size_logo" src="img/mobile-logo.png" alt=""></a>
+            <a class="navbar-brand d-none d-lg-block my_size_logo" href="#"><img src="img/logo.svg" alt=""></a>
   
             <form class="d-flex align-items-center flex-grow-1 bg-body-secondary text-black ps-2 ms-4 rounded-3" role="search">
               <i class="fa-solid fa-magnifying-glass"></i>
@@ -45,10 +45,9 @@
                             <i class="fa-solid fa-bell text-warning"></i>
                         </a>
                         <ul class="dropdown-menu my_dropdown">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li><a class="dropdown-item" href="#">Profilo</a></li>
+                            <li><a class="dropdown-item" href="#">Fatturazione</a></li>
+                            <li><a class="dropdown-item" href="#">Logout</a></li>
                         </ul>
                     </li>
                   </ul>          
@@ -60,14 +59,15 @@
     <section id="lower-section">
         <!-- aside -->
         <aside class="my_aside my_aside_bg align-items-between py-4 text-white">
-            <div class="row h-100 ms-2">
-                <div class="col-12 d-flex flex-column align-items-center align-items-lg-start gap-2">
-                    <a class="align-center text-decoration-none text-white" href="#"><i class="fa-solid fa-house me-3 my_aside_txt" style="height: 15px; width: 15px;"></i> <p class="d-none d-lg-inline">Home</p></a>
-                    <a class="align-center text-decoration-none text-white" href="#"><i class="fa-solid fa-chart-simple me-3 my_aside_txt" style="height: 15px; width: 15px;"></i> <p class="d-none d-lg-inline">Stats</p></a>
-                    <a class="align-center text-decoration-none text-white" href="#"><i class="fa-solid fa-signal me-3 my_aside_txt" style="height: 15px; width: 15px;"></i> <p class="d-none d-lg-inline">Signals</p></a>
+            <div class="row h-100 ms-1 ms-md-2">
+                <div class="col-12 d-flex flex-column align-items-center align-items-md-start gap-2">
+                    
+                    <a class="align-center text-decoration-none text-white py-2 ps-md-2 text-center text-md-start" href="#"><i class="fa-solid fa-house me-2 my_aside_txt" style="height:20px; width:20px;"></i> <p class="d-none d-md-inline">Home</p></a>
+                    <a class="align-center text-decoration-none text-white py-2 ps-md-2 text-center text-md-start" href="#"><i class="fa-solid fa-chart-simple me-2 my_aside_txt" style="height:20px; width:20px;"></i> <p class="d-none d-md-inline">Stats</p></a>
+                    <a class="align-center text-decoration-none text-white py-2 ps-md-2 text-center text-md-start" href="#"><i class="fa-solid fa-signal me-2 my_aside_txt" style="height:20px; width:20px;"></i> <p class="d-none d-md-inline">Signals</p></a>
                 </div>
                 <div class="col-12 d-flex justify-content-center justify-content-lg-start align-items-end">
-                    <a class="align-center text-decoration-none text-white" href="#"><i class="fa-solid fa-gear me-3 my_aside_txt" style="height: 15px; width: 15px;"></i> <p class="d-none d-lg-inline">Admin</p></a>
+                    <a class="align-center text-decoration-none text-white py-2 ps-md-2 text-center text-md-start" href="#"><i class="fa-solid fa-gear me-2 my_aside_txt" style="height:20px; width:20px;"></i> <p class="d-none d-md-inline">Admin</p></a>
                 </div>
             </div>
         </aside>
@@ -99,9 +99,35 @@
                         <div class="col-md-4 col-12 text-center">
                             <div>
                                 Nuovo Studente
-                                <button type="button" class="btn btn-outline-light mx-2 my_plus">
+                                <button type="button" class="btn btn-outline-light mx-2 my_plus" data-bs-toggle="modal" data-bs-target="#exampleModal">
                                     <i class="fa-solid fa-plus"></i>
                                 </button>
+<!-- -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+                                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg modal-fullscreen-md-down">
+                                      <div class="modal-content">
+                                        <div class="modal-header">
+                                          <div class="modal-title text-black fs-5" id="exampleModalLabel">Inserisci un nuovo studente</div>
+                                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="mb-3">
+                                                <label for="formGroupExampleInput" class="form-label text-black">Example label</label>
+                                                <input type="text" class="form-control" aria-label="Nome">
+                                              </div>
+                                              <div class="mb-3">
+                                                <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+                                                <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Salva</button>
+                                          <button type="button" class="btn btn-warning">Svuota</button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                </div>
+<!-- -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
                             </div>
                         </div>
                     </div>
@@ -122,8 +148,8 @@
                                     <thead>
                                       <tr>
                                         <th class="my_table_name" scope="col">Nome</th>
-                                        <th class="my_tab_h" scope="col">Data inizio</th>
-                                        <th class="my_tab_h" scope="col">ROI</th>
+                                        <th class="my_tab_h d-none d-md-table-cell" scope="col">Data inizio</th>
+                                        <th class="my_tab_h d-none d-md-table-cell" scope="col">ROI</th>
                                         <th class="my_tab_h" scope="col">Stato</th>
                                         <th class="my_tab_h" scope="col">Azioni</th>
                                       </tr>
@@ -134,8 +160,8 @@
                                             <img class="my_avatar" src="./img/class-avatar.jpg" alt="avatar">
                                             Classe 75
                                         </th>
-                                        <td class="my_date">15 Feb 2021</td>
-                                        <td class="my_percentage">20%</td>
+                                        <td class="my_date d-none d-md-table-cell">15 Feb 2021</td>
+                                        <td class="my_percentage d-none d-md-table-cell">20%</td>
                                         <td><span class="badge fw-normal text-bg-success">Done</span></td>
                                         <td>
                                             <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pencil"></i></button>
@@ -147,8 +173,8 @@
                                             <img class="my_avatar" src="./img/class-avatar.jpg" alt="avatar">
                                             Classe 76
                                         </th>
-                                        <td class="my_date">16 Feb 2021</td>
-                                        <td class="my_percentage">20%</td>
+                                        <td class="my_date d-none d-md-table-cell">16 Feb 2021</td>
+                                        <td class="my_percentage d-none d-md-table-cell">20%</td>
                                         <td><span class="badge fw-normal text-bg-success">Done</span></td>
                                         <td>
                                             <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pencil"></i></button>
@@ -160,8 +186,8 @@
                                             <img class="my_avatar" src="./img/class-avatar.jpg" alt="avatar">
                                             Classe 77
                                         </th>
-                                        <td class="my_date">17 Feb 2021</td>
-                                        <td class="my_percentage">20%</td>
+                                        <td class="my_date d-none d-md-table-cell">17 Feb 2021</td>
+                                        <td class="my_percentage d-none d-md-table-cell">20%</td>
                                         <td><span class="badge fw-normal text-white bg-warning">Process</span></td>
                                         <td>
                                             <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pencil"></i></button>
@@ -173,8 +199,8 @@
                                             <img class="my_avatar" src="./img/class-avatar.jpg" alt="avatar">
                                             Classe 78
                                         </th>
-                                        <td class="my_date">18 Feb 2021</td>
-                                        <td class="my_percentage">20%</td>
+                                        <td class="my_date d-none d-md-table-cell">18 Feb 2021</td>
+                                        <td class="my_percentage d-none d-md-table-cell">20%</td>
                                         <td><span class="badge fw-normal text-bg-success">Done</span></td>
                                         <td>
                                             <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pencil"></i></button>
@@ -186,8 +212,8 @@
                                             <img class="my_avatar" src="./img/class-avatar.jpg" alt="avatar">
                                             Classe 79
                                         </th>
-                                        <td class="my_date">19 Feb 2021</td>
-                                        <td class="my_percentage">20%</td>
+                                        <td class="my_date d-none d-md-table-cell">19 Feb 2021</td>
+                                        <td class="my_percentage d-none d-md-table-cell">20%</td>
                                         <td><span class="badge fw-normal text-bg-danger">Failed</span></td>
                                         <td>
                                             <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pencil"></i></button>
@@ -199,8 +225,8 @@
                                             <img class="my_avatar" src="./img/class-avatar.jpg" alt="avatar">
                                             Classe 80
                                         </th>
-                                        <td class="my_date">20 Feb 2021</td>
-                                        <td class="my_percentage">20%</td>
+                                        <td class="my_date d-none d-md-table-cell">20 Feb 2021</td>
+                                        <td class="my_percentage d-none d-md-table-cell">20%</td>
                                         <td><span class="badge fw-normal text-bg-success">Done</span></td>
                                         <td>
                                             <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pencil"></i></button>
@@ -212,8 +238,8 @@
                                             <img class="my_avatar" src="./img/class-avatar.jpg" alt="avatar">
                                             Classe 81
                                         </th>
-                                        <td class="my_date">21 Feb 2021</td>
-                                        <td class="my_percentage">20%</td>
+                                        <td class="my_date d-none d-md-table-cell">21 Feb 2021</td>
+                                        <td class="my_percentage d-none d-md-table-cell">20%</td>
                                         <td><span class="badge fw-normal text-bg-danger">Failed</span></td>
                                         <td>
                                             <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pencil"></i></button>
@@ -225,8 +251,8 @@
                                             <img class="my_avatar" src="./img/class-avatar.jpg" alt="avatar">
                                             Classe 82
                                         </th>
-                                        <td class="my_date">22 Feb 2021</td>
-                                        <td class="my_percentage">20%</td>
+                                        <td class="my_date d-none d-md-table-cell">22 Feb 2021</td>
+                                        <td class="my_percentage d-none d-md-table-cell">20%</td>
                                         <td><span class="badge fw-normal text-bg-success">Done</span></td>
                                         <td>
                                             <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pencil"></i></button>

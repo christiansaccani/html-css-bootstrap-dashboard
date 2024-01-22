@@ -40,13 +40,17 @@ nav .container-fluid{
     background-color: #051e34;
     background-image: url(img/sidebar-bg.png);
     /* test */
-    width: 150px;
+    width: 70px;
+}
+
+.my_aside_txt {
+    font-size: 20px;
 }
 
 .my_main {
     background-color: #f8f9fa;
 
-    width: calc(100% - 150px);
+    width: calc(100% - 70px);
 
     overflow-y: auto;
 }
@@ -58,10 +62,6 @@ nav .container-fluid{
 .my_middle {
     display: flex;
     justify-content: center;
-}
-
-.my_plus:hover {
-    color: #1b72e8;
 }
 
 .my_table_name {
@@ -91,7 +91,7 @@ td {
 }
 
 .my_dropdown {
-    right: 15%;
+    right: 20%;
     left: auto !important;
     top: 105% !important;
 }
@@ -99,3 +99,52 @@ td {
 .my_inside_border {
     border: 1px solid #dee2e6 !important;
 }
+
+.modal-header {
+    border-bottom: none;
+}
+
+.modal-footer {
+    border-top: none;
+}
+
+/* ----- Regole Hover ----- */
+
+.my_plus:hover {
+    color: #1b72e8;
+}
+
+aside a:hover {
+    text-align: left;
+    width: 85%;
+    background-color: rgb(255, 255, 255, 50%);
+}
+
+/* ----- Regole Media Query ----- */
+
+@media screen and (min-width: 768px) {
+
+    .my_aside {
+        width: 150px;
+    }
+
+    .my_main {
+        width: calc(100% - 150px);
+    }    
+
+    .my_aside_txt {
+        font-size: 12px;
+    }
+
+    aside a:hover {
+        width: auto;
+        width: 50%;
+        background-color: rgb(255, 255, 255, 50%);
+        text-align: left;
+    }
+}
+
+/* @media screen and (min-width: 576px) {
+
+    
+} */
