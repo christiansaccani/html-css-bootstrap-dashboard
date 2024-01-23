@@ -99,33 +99,154 @@
                         <div class="col-md-4 col-12 text-center">
                             <div>
                                 Nuovo Studente
-                                <button type="button" class="btn btn-outline-light mx-2 my_plus" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                <button type="button" class="btn btn-outline-light mx-2 my_plus" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
                                     <i class="fa-solid fa-plus"></i>
                                 </button>
 <!-- -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
-                                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                    <div class="modal-dialog modal-lg modal-fullscreen-md-down">
-                                      <div class="modal-content">
-                                        <div class="modal-header">
-                                          <div class="modal-title text-black fs-5" id="exampleModalLabel">Inserisci un nuovo studente</div>
-                                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                <div class="offcanvas offcanvas-end w-100 my_off" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+                                  <div class="offcanvas-header">
+                                    <h5 class="offcanvas-title" id="staticBackdropLabel">Inserisci un nuovo Studente</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                  </div>
+                                  <div class="offcanvas-body fw-semibold">
+                                    <div class="row">
+                                      <div class="col-12 col-sm text-start">
+                                        <label for="Nome" class="form-label">Nome</label>
+                                        <input type="text" class="form-control" aria-label="Nome">
+                                      </div>
+                                      <div class="col-12 col-sm text-start">
+                                        <label for="Cognome" class="form-label">Cognome</label>
+                                        <input type="text" class="form-control" aria-label="Cognome">
+                                      </div>
+                                    </div>
+
+                                    <div class="row mt-3">
+                                      <div class="col-12 col-sm text-start">
+                                        <label for="Emial" class="form-label">Email</label>
+                                        <div class="input-group">
+                                          <div class="input-group-text">@</div>
+                                          <input type="text" class="form-control" aria-label="Email">
                                         </div>
-                                        <div class="modal-body">
-                                            <div class="mb-3">
-                                                <label for="formGroupExampleInput" class="form-label text-black">Example label</label>
-                                                <input type="text" class="form-control" aria-label="Nome">
-                                              </div>
-                                              <div class="mb-3">
-                                                <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-                                                <input type="text" class="form-control" placeholder="First name" aria-label="First name">
-                                            </div>
+                                      </div>
+                                      <div class="col-12 col-sm text-start">
+                                        <label for="Password" class="form-label">Password</label>
+                                        <input type="password" class="form-control" aria-label="Password"">
+                                      </div>
+                                    </div>
+
+                                    <div class="row mt-3">
+                                      <div class="col-12 col-sm text-start">
+                                        <label for="Email" class="form-label">Email</label>
+                                        <div class="input-group">
+                                          <div class="input-group-text">@</div>
+                                          <input type="text" class="form-control" aria-label="Email">
                                         </div>
-                                        <div class="modal-footer">
-                                          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Salva</button>
-                                          <button type="button" class="btn btn-warning">Svuota</button>
+                                      </div>
+                                      <div class="col-12 col-sm text-start">
+                                        <label for="Password" class="form-label">Password</label>
+                                        <input type="password" class="form-control" aria-label="Password">
+                                      </div>
+                                    </div>
+
+                                    <div class="row mt-3">
+                                      <div class="col-12 col-sm text-start">
+                                        <label for="Indirizzo" class="form-label">Indirizzo</label>
+                                        <input type="text" class="form-control" aria-label="Indirizzo" placeholder="Via, Viale, Piazza">
+                                      </div>
+                                    </div>
+
+                                    <div class="row mt-3">
+                                      <div class="col-12 col-sm text-start">
+                                        <label for="Città" class="form-label">Città</label>
+                                        <input type="text" class="form-control" aria-label="Città">
+                                      </div>
+                                      <div class="col-12 col-sm text-start">
+                                        <label for="Stato" class="form-label">Stato</label>
+                                        <select aria-label="Stato" class="form-select">
+                                          <option selected>Scegli...</option>
+                                          <option value="IT">Italy</option>
+                                          <option value="AL">Albania</option>
+                                          <option value="AD">Andorra</option>
+                                          <option value="AT">Austria</option>
+                                          <option value="BY">Belarus</option>
+                                          <option value="BE">Belgium</option>
+                                          <option value="BA">Bosnia and Herzegovina</option>
+                                          <option value="BG">Bulgaria</option>
+                                          <option value="HR">Croatia (Hrvatska)</option>
+                                          <option value="CY">Cyprus</option>
+                                          <option value="CZ">Czech Republic</option>
+                                          <option value="FR">France</option>
+                                          <option value="GI">Gibraltar</option>
+                                          <option value="DE">Germany</option>
+                                          <option value="GR">Greece</option>
+                                          <option value="VA">Holy See (Vatican City State)</option>
+                                          <option value="HU">Hungary</option>
+                                          <option value="GB">United Kingdom</option>
+                                          <option value="LI">Liechtenstein</option>
+                                          <option value="LU">Luxembourg</option>
+                                          <option value="MK">Macedonia</option>
+                                          <option value="MT">Malta</option>
+                                          <option value="MD">Moldova</option>
+                                          <option value="MC">Monaco</option>
+                                          <option value="ME">Montenegro</option>
+                                          <option value="NL">Netherlands</option>
+                                          <option value="PL">Poland</option>
+                                          <option value="PT">Portugal</option>
+                                          <option value="RO">Romania</option>
+                                          <option value="SM">San Marino</option>
+                                          <option value="RS">Serbia</option>
+                                          <option value="SK">Slovakia</option>
+                                          <option value="SI">Slovenia</option>
+                                          <option value="ES">Spain</option>
+                                          <option value="UA">Ukraine</option>
+                                          <option value="DK">Denmark</option>
+                                          <option value="EE">Estonia</option>
+                                          <option value="FO">Faroe Islands</option>
+                                          <option value="FI">Finland</option>
+                                          <option value="GL">Greenland</option>
+                                          <option value="IS">Iceland</option>
+                                          <option value="IE">Ireland</option>
+                                          <option value="LV">Latvia</option>
+                                          <option value="LT">Lithuania</option>
+                                          <option value="NO">Norway</option>
+                                          <option value="SJ">Svalbard and Jan Mayen Islands</option>
+                                          <option value="SE">Sweden</option>
+                                          <option value="CH">Switzerland</option>
+                                          <option value="TR">Turkey</option>
+                                        </select>
+                                      </div>
+                                      <div class="col-12 col-sm text-start">
+                                        <label for="CAP" class="form-label">CAP</label>
+                                        <input type="text" class="form-control" aria-label="CAP" pattern="0-9" minlength="5" maxlength="5">
+                                      </div>
+                                    </div>
+
+                                    <div class="row mt-3">
+                                      <div class="col-12 col-sm text-start">
+                                        <label for="Foto" class="form-label">Foto</label>
+                                        <input type="file" class="form-control" id="inputGroupFile02">
+                                      </div>
+                                    </div>
+
+                                    <div class="row mt-3">
+                                      <div class="col-12 col-sm text-start">
+                                        <div class="form-check">
+                                          <input class="form-check-input" type="checkbox" id="gridCheck">
+                                          <label class="form-check-label" for="gridCheck">
+                                            Seleziona per proseguire
+                                          </label>
                                         </div>
                                       </div>
                                     </div>
+
+                                    <div class="row mt-3">
+                                      <div class="col-12 col-sm text-start">
+                                        <button type="button" class="btn btn-primary">Salva</button>
+                                        <button type="button" class="btn btn-warning">Svuota</button>
+                                      </div>
+                                    </div>
+
+                                  </div>
                                 </div>
 <!-- -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
                             </div>
