@@ -23,7 +23,7 @@ nav .container-fluid{
 
 #header {
     background-color: #1b72e8;
-    height: 120px;
+    height: 260px;
 }
 
 .breadcrumb-item+.breadcrumb-item::before {
@@ -43,6 +43,10 @@ nav .container-fluid{
     width: 70px;
 }
 
+.my_row {
+    margin-right: 0 !important;
+}
+
 .my_aside_txt {
     font-size: 20px;
 }
@@ -59,10 +63,7 @@ nav .container-fluid{
     background-color: #165bba !important;
 }
 
-.my_middle {
-    display: flex;
-    justify-content: center;
-}
+
 
 .my_table_name {
     width: 40%;
@@ -148,7 +149,23 @@ aside a:hover {
 }
 }
 
-/* @media screen and (min-width: 576px) {
+@media screen and (min-width: 576px) {
 
+    #header {
+        height: 120px;
+    }
+
+    .my_header_af {
+        font-size: calc(0.5em + 1vw);
+    }
     
-} */
+    .my_header_af_b {
+        font-size: calc(0.3em + 0.4vw);
+    }
+
+    .my_middle {
+        display: flex;
+        justify-content: center;
+    }
+    
+}
